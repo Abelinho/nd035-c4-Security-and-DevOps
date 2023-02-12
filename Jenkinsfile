@@ -3,19 +3,19 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'sh \'./scripts/build.sh\''
+        sh './starter_code/build.sh'
       }
     }
 
     stage('Test') {
       steps {
-        sh 'sh \'./scripts/test.sh\''
+        sh './starter_code/test.sh'
       }
     }
 
     stage('Deploy') {
       steps {
-        sh 'sh \'./scripts/deploy.sh\''
+        sh './starter_code/deploy.sh'
       }
     }
 
